@@ -46,7 +46,13 @@
        procedure division.
        main-procedure.
            perform setup-test-data
+           perform search-by-primary-id
+           perform search-by-all-ids
+           perform search-unkeyed-table
+           display space
+           stop run.
 
+       search-by-primary-id.
            display space
            display "=================================================="
            display "Searching keyed table using binary search."
@@ -64,7 +70,9 @@
                when ws-item-id-1(idx) = ws-accept-id-1
                    perform display-found-item
            end-search
+           exit paragraph.
 
+       search-by-all-ids.
            display space
            display "=================================================="
            display "Searching again with all required ids matching."
@@ -87,9 +95,11 @@
                    ws-item-id-3(idx) = ws-accept-id-3
                    perform display-found-item
            end-search
+           exit paragraph.
 
-      *> Sequential searches are slower but also don't require the data
-      *> to be sorted or require a key.
+       search-unkeyed-table.
+      *>   Sequential searches are slower but also don't require the data
+      *>   to be sorted or require a key.
            display space
            display "=================================================="
            display "Searching not keyed table using sequential search."
@@ -107,10 +117,7 @@
                    display "ws-no-key-value: " ws-no-key-value(idx-2)
                    display space
            end-search
-
-           display space
-
-           stop run.
+           exit paragraph.
 
        display-found-item.
            display " Record found:"
