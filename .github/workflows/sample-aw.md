@@ -6,11 +6,23 @@ on:
 
 permissions: read-all
 
+strict: true
+
 safe-outputs:
   add-comment:
+  add-labels:
+    allowed: [valid]
+    max: 1
+  close-issue:
+    target: triggering
+    state-reason: not_planned
 
 ---
 
 # Issue validator
 
-This workflow will analyze the details of the issue and determine if it is a valid issue or not (valid if the issue as anything realated to COBOL, if not is not valid). If it is a valid issue, it will be labeled as such. If it is not a valid issue, it will be closed with a comment explaining why.
+Analyze the triggering issue's title and body.
+
+- If the issue is related to COBOL, add the `valid` label and comment with a brief explanation.
+- If the issue is not related to COBOL, close it as `not_planned` with a brief explanation in the closing comment.
+- If the triggering issue is already closed, call `noop` and explain that no action is required.
