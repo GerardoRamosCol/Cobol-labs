@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - accept
+          - broken
           - comp_test
           - display_test
           - display_timing
