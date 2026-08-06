@@ -1,0 +1,36 @@
+﻿2026-08-06T13:58:25.3049489Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:25.3050263Z with:
+2026-08-06T13:58:25.3051891Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_workflow_timestamp_api.cjs');
+await main();
+
+2026-08-06T13:58:25.3057444Z   github-token: ***
+2026-08-06T13:58:25.3057882Z   debug: false
+2026-08-06T13:58:25.3058315Z   user-agent: actions/github-script
+2026-08-06T13:58:25.3058835Z   result-encoding: json
+2026-08-06T13:58:25.3059266Z   retries: 0
+2026-08-06T13:58:25.3059711Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:25.3060258Z env:
+2026-08-06T13:58:25.3060646Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:25.3061154Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:25.3061711Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:25.3062611Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:25.3063265Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:25.3063934Z   GH_AW_WORKFLOW_FILE: repository-issue-pr-report.lock.yml
+2026-08-06T13:58:25.3065068Z   GH_AW_CONTEXT_WORKFLOW_REF: GerardoRamosCol/Cobol-labs/.github/workflows/repository-issue-pr-report.lock.yml@refs/heads/main
+2026-08-06T13:58:25.3066083Z ##[endgroup]
+2026-08-06T13:58:25.4294756Z Checking for stale lock file using frontmatter hash:
+2026-08-06T13:58:25.4298528Z   Source: .github/workflows/repository-issue-pr-report.md
+2026-08-06T13:58:25.4300119Z   Lock file: .github/workflows/repository-issue-pr-report.lock.yml
+2026-08-06T13:58:25.4303006Z Env workflow ref already identifies this workflow, skipping referenced_workflows API lookup
+2026-08-06T13:58:25.4305287Z GITHUB_WORKFLOW_REF: GerardoRamosCol/Cobol-labs/.github/workflows/repository-issue-pr-report.lock.yml@refs/heads/main
+2026-08-06T13:58:25.4326118Z GH_AW_CONTEXT_WORKFLOW_REF: GerardoRamosCol/Cobol-labs/.github/workflows/repository-issue-pr-report.lock.yml@refs/heads/main (available as env fallback)
+2026-08-06T13:58:25.4327500Z GITHUB_REPOSITORY: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:25.4328249Z Resolved source repo: GerardoRamosCol/Cobol-labs @ refs/heads/main
+2026-08-06T13:58:25.4329186Z Same-repo invocation: checking out GerardoRamosCol/Cobol-labs @ refs/heads/main
+2026-08-06T13:58:26.0223415Z Frontmatter hash comparison:
+2026-08-06T13:58:26.0254500Z   Lock file hash:    dc1675b4bfcacf44cdbe5f205eb401d04511f8152d233d8f6d2cd910786c071a
+2026-08-06T13:58:26.0256661Z   Recomputed hash:   dc1675b4bfcacf44cdbe5f205eb401d04511f8152d233d8f6d2cd910786c071a
+2026-08-06T13:58:26.0273709Z   Status: ✅ Hashes match
+2026-08-06T13:58:26.0274323Z ✅ Lock file is up to date (hashes match)

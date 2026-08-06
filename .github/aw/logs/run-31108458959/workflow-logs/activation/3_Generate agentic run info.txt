@@ -1,0 +1,76 @@
+﻿2026-08-06T13:58:22.7290665Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:22.7291476Z with:
+2026-08-06T13:58:22.7293458Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/generate_aw_info.cjs');
+await main(core, context);
+
+2026-08-06T13:58:22.7298813Z   github-token: ***
+2026-08-06T13:58:22.7299252Z   debug: false
+2026-08-06T13:58:22.7299708Z   user-agent: actions/github-script
+2026-08-06T13:58:22.7300243Z   result-encoding: json
+2026-08-06T13:58:22.7300795Z   retries: 0
+2026-08-06T13:58:22.7301255Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:22.7301817Z env:
+2026-08-06T13:58:22.7302216Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:22.7302945Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:22.7303519Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:22.7304195Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:22.7304830Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:22.7305394Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-08-06T13:58:22.7305917Z   GH_AW_INFO_ENGINE_NAME: GitHub Copilot CLI
+2026-08-06T13:58:22.7306468Z   GH_AW_INFO_MODEL: auto
+2026-08-06T13:58:22.7306924Z   GH_AW_INFO_VERSION: 1.0.77
+2026-08-06T13:58:22.7307408Z   GH_AW_INFO_AGENT_VERSION: 1.0.77
+2026-08-06T13:58:22.7307913Z   GH_AW_INFO_CLI_VERSION: v0.84.3
+2026-08-06T13:58:22.7308560Z   GH_AW_INFO_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T13:58:22.7309407Z   GH_AW_INFO_EXPERIMENTAL: false
+2026-08-06T13:58:22.7309930Z   GH_AW_INFO_SUPPORTS_TOOLS_ALLOWLIST: true
+2026-08-06T13:58:22.7310488Z   GH_AW_INFO_STAGED: false
+2026-08-06T13:58:22.7310958Z   GH_AW_INFO_ALLOWED_DOMAINS: []
+2026-08-06T13:58:22.7311452Z   GH_AW_INFO_FIREWALL_ENABLED: true
+2026-08-06T13:58:22.7311968Z   GH_AW_INFO_AWF_VERSION: v0.27.43
+2026-08-06T13:58:22.7312671Z   GH_AW_INFO_AWMG_VERSION: 
+2026-08-06T13:58:22.7313176Z   GH_AW_INFO_FIREWALL_TYPE: squid
+2026-08-06T13:58:22.7313682Z   GH_AW_COMPILED_STRICT: true
+2026-08-06T13:58:22.7314146Z ##[endgroup]
+2026-08-06T13:58:22.8948209Z Starting context variable validation...
+2026-08-06T13:58:22.8964020Z ✓ github.event.repository.id is valid: 1322951077
+2026-08-06T13:58:22.8967062Z ✓ github.event.sender.id is valid: 8069906
+2026-08-06T13:58:22.8968511Z Validated 2 context variables
+2026-08-06T13:58:22.8969884Z ✅ All context variables validated successfully
+2026-08-06T13:58:22.8973744Z Lockdown mode not explicitly enabled, skipping validation
+2026-08-06T13:58:22.8975413Z Repository visibility: unknown
+2026-08-06T13:58:22.8977093Z Compiled with strict mode: true
+2026-08-06T13:58:22.9047772Z Generated merged models.json at: /tmp/gh-aw/models.json
+2026-08-06T13:58:22.9163382Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-08-06T13:58:22.9164797Z {
+2026-08-06T13:58:22.9165505Z   "engine_id": "copilot",
+2026-08-06T13:58:22.9166152Z   "engine_name": "GitHub Copilot CLI",
+2026-08-06T13:58:22.9166899Z   "model": "auto",
+2026-08-06T13:58:22.9167433Z   "version": "1.0.77",
+2026-08-06T13:58:22.9168029Z   "agent_version": "1.0.77",
+2026-08-06T13:58:22.9168752Z   "workflow_name": "Repository Issue and Pull Request Report",
+2026-08-06T13:58:22.9169548Z   "experimental": false,
+2026-08-06T13:58:22.9170150Z   "supports_tools_allowlist": true,
+2026-08-06T13:58:22.9170796Z   "run_id": 31108458959,
+2026-08-06T13:58:22.9171339Z   "run_number": 1,
+2026-08-06T13:58:22.9172858Z   "run_attempt": "1",
+2026-08-06T13:58:22.9173413Z   "repository": "GerardoRamosCol/Cobol-labs",
+2026-08-06T13:58:22.9174000Z   "ref": "refs/heads/main",
+2026-08-06T13:58:22.9174527Z   "sha": "07e01f3c9025fdd645db3a24448f60618e2a30ee",
+2026-08-06T13:58:22.9175122Z   "actor": "GerardoRamosCol",
+2026-08-06T13:58:22.9175632Z   "event_name": "workflow_dispatch",
+2026-08-06T13:58:22.9176150Z   "target_repo": "",
+2026-08-06T13:58:22.9176581Z   "staged": false,
+2026-08-06T13:58:22.9177001Z   "allowed_domains": [],
+2026-08-06T13:58:22.9177755Z   "firewall_enabled": true,
+2026-08-06T13:58:22.9178236Z   "awf_version": "v0.27.43",
+2026-08-06T13:58:22.9178707Z   "awmg_version": "",
+2026-08-06T13:58:22.9179143Z   "steps": {
+2026-08-06T13:58:22.9181058Z     "firewall": "squid"
+2026-08-06T13:58:22.9181551Z   },
+2026-08-06T13:58:22.9182809Z   "created_at": "2026-08-06T13:58:22.897Z",
+2026-08-06T13:58:22.9183454Z   "cli_version": "v0.84.3"
+2026-08-06T13:58:22.9183916Z }
+2026-08-06T13:58:22.9184371Z Generated workflow overview in step summary

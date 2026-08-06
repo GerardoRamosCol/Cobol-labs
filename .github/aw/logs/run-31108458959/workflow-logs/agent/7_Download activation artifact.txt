@@ -1,0 +1,32 @@
+﻿2026-08-06T13:58:40.7284158Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-06T13:58:40.7284689Z with:
+2026-08-06T13:58:40.7285000Z   name: activation
+2026-08-06T13:58:40.7285290Z   path: /tmp/gh-aw
+2026-08-06T13:58:40.7285638Z   merge-multiple: false
+2026-08-06T13:58:40.7285983Z   repository: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:40.7286393Z   run-id: 31108458959
+2026-08-06T13:58:40.7286729Z   skip-decompress: false
+2026-08-06T13:58:40.7287042Z   digest-mismatch: error
+2026-08-06T13:58:40.7287381Z env:
+2026-08-06T13:58:40.7287663Z   DEFAULT_BRANCH: main
+2026-08-06T13:58:40.7288317Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:58:40.7288791Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:58:40.7289309Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:58:40.7289846Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:58:40.7290272Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:40.7290728Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:58:40.7291239Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:40.7291846Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:58:40.7292260Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:58:40.7292651Z ##[endgroup]
+2026-08-06T13:58:40.8612554Z Downloading single artifact
+2026-08-06T13:58:41.1354622Z Preparing to download the following artifacts:
+2026-08-06T13:58:41.1355595Z - activation (ID: 8970607984, Size: 118233, Expected Digest: sha256:6c15be66105ea4eb44e3c6b41a86e6585e47576095d99a5be0b961d50e71c39b)
+2026-08-06T13:58:41.5829946Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/3830064b-819f-4a01-afcd-9cdc6e317784/workflow-job-run-fad8e5fb-147f-594b-b3a2-75fb23df19ce/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip
+2026-08-06T13:58:41.5831577Z Starting download of artifact to: /tmp/gh-aw
+2026-08-06T13:58:41.8099305Z (node:3351) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-06T13:58:41.8100650Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-06T13:58:41.9172402Z SHA256 digest of downloaded artifact is 6c15be66105ea4eb44e3c6b41a86e6585e47576095d99a5be0b961d50e71c39b
+2026-08-06T13:58:41.9174214Z Artifact download completed successfully.
+2026-08-06T13:58:41.9174686Z Total of 1 artifact(s) downloaded
+2026-08-06T13:58:41.9175161Z Download artifact has finished successfully

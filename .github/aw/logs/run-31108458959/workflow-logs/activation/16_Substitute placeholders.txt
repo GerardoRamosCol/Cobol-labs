@@ -1,0 +1,52 @@
+﻿2026-08-06T13:58:26.4888567Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:26.4889351Z with:
+2026-08-06T13:58:26.4895532Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+
+const substitutePlaceholders = require('/home/runner/work/_temp/gh-aw/actions/substitute_placeholders.cjs');
+
+// Call the substitution function
+return await substitutePlaceholders({
+  file: process.env.GH_AW_PROMPT,
+  substitutions: {
+    GH_AW_EXPR_1A3A194A: process.env.GH_AW_EXPR_1A3A194A,
+    GH_AW_EXPR_463A214A: process.env.GH_AW_EXPR_463A214A,
+    GH_AW_EXPR_802A9F6A: process.env.GH_AW_EXPR_802A9F6A,
+    GH_AW_EXPR_FF1D34CE: process.env.GH_AW_EXPR_FF1D34CE,
+    GH_AW_GITHUB_ACTOR: process.env.GH_AW_GITHUB_ACTOR,
+    GH_AW_GITHUB_REPOSITORY: process.env.GH_AW_GITHUB_REPOSITORY,
+    GH_AW_GITHUB_RUN_ID: process.env.GH_AW_GITHUB_RUN_ID,
+    GH_AW_GITHUB_SERVER_URL: process.env.GH_AW_GITHUB_SERVER_URL,
+    GH_AW_GITHUB_WORKSPACE: process.env.GH_AW_GITHUB_WORKSPACE,
+    GH_AW_MCP_CLI_SERVERS_LIST: process.env.GH_AW_MCP_CLI_SERVERS_LIST,
+    GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: process.env.GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED
+  }
+});
+
+2026-08-06T13:58:26.4905999Z   github-token: ***
+2026-08-06T13:58:26.4906449Z   debug: false
+2026-08-06T13:58:26.4906874Z   user-agent: actions/github-script
+2026-08-06T13:58:26.4907392Z   result-encoding: json
+2026-08-06T13:58:26.4907822Z   retries: 0
+2026-08-06T13:58:26.4908274Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:26.4908821Z env:
+2026-08-06T13:58:26.4909214Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:26.4909717Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:26.4910274Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:26.4910942Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:26.4911536Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:26.4912135Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-06T13:58:26.4912940Z   GH_AW_EXPR_1A3A194A: false
+2026-08-06T13:58:26.4913410Z   GH_AW_EXPR_463A214A: false
+2026-08-06T13:58:26.4913908Z   GH_AW_EXPR_802A9F6A: false
+2026-08-06T13:58:26.4914358Z   GH_AW_EXPR_FF1D34CE: 
+2026-08-06T13:58:26.4914818Z   GH_AW_GITHUB_ACTOR: GerardoRamosCol
+2026-08-06T13:58:26.4915404Z   GH_AW_GITHUB_REPOSITORY: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:26.4916002Z   GH_AW_GITHUB_RUN_ID: 31108458959
+2026-08-06T13:58:26.4916536Z   GH_AW_GITHUB_SERVER_URL: https://github.com
+2026-08-06T13:58:26.4917207Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/Cobol-labs/Cobol-labs
+2026-08-06T13:58:26.4918446Z   GH_AW_MCP_CLI_SERVERS_LIST: - `github` — run `github --help` to see available tools
+- `safeoutputs` — run `safeoutputs --help` to see available tools
+2026-08-06T13:58:26.4919613Z   GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: true
+2026-08-06T13:58:26.4920188Z ##[endgroup]
+2026-08-06T13:58:26.6115444Z [substitutePlaceholders] /tmp/gh-aw/aw-prompts/prompt.txt (11 substitution(s))

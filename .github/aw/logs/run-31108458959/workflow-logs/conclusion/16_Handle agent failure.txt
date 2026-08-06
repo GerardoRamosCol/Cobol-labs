@@ -1,0 +1,110 @@
+﻿2026-08-06T14:00:37.3290369Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:37.3291952Z with:
+2026-08-06T14:00:37.3303079Z   github-token: ***
+2026-08-06T14:00:37.3306432Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_agent_failure.cjs');
+await main();
+
+2026-08-06T14:00:37.3309859Z   debug: false
+2026-08-06T14:00:37.3310710Z   user-agent: actions/github-script
+2026-08-06T14:00:37.3312418Z   result-encoding: json
+2026-08-06T14:00:37.3313302Z   retries: 0
+2026-08-06T14:00:37.3314194Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:37.3315332Z env:
+2026-08-06T14:00:37.3316108Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:37.3317211Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:37.3318508Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6e50f6ea6f10530e
+2026-08-06T14:00:37.3319730Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024829698
+2026-08-06T14:00:37.3320916Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T14:00:37.3322436Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:37.3324737Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:37.3327230Z   GH_AW_RUN_URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959
+2026-08-06T14:00:37.3328748Z   GH_AW_AGENT_CONCLUSION: failure
+2026-08-06T14:00:37.3329829Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:37.3331038Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 168
+2026-08-06T14:00:37.3332373Z   GH_AW_ENGINE_ID: copilot
+2026-08-06T14:00:37.3333342Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-08-06T14:00:37.3338590Z   GH_AW_ENGINE_SECRET_FAILURE_MESSAGE: **Alternative**: If your organization has a Copilot subscription, you can avoid the need for a personal access token by adding a top-level `permissions` block to your workflow file. This enables Copilot inference through the org using the built-in GitHub Actions token.
+
+```yaml
+permissions:
+  copilot-requests: write
+```
+
+See: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-08-06T14:00:37.3343976Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-08-06T14:00:37.3344986Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:37.3345942Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-08-06T14:00:37.3347045Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-08-06T14:00:37.3348048Z   GH_AW_AIC: 
+2026-08-06T14:00:37.3348850Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:37.3349813Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-08-06T14:00:37.3351044Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-08-06T14:00:37.3352081Z   GH_AW_MCP_POLICY_ERROR: false
+2026-08-06T14:00:37.3353225Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-08-06T14:00:37.3354292Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: false
+2026-08-06T14:00:37.3355371Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-08-06T14:00:37.3356448Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-08-06T14:00:37.3357537Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-08-06T14:00:37.3358634Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-08-06T14:00:37.3361122Z   GH_AW_ENGINE_API_HOSTS: api.enterprise.githubcopilot.com,api.githubcopilot.com,api.business.githubcopilot.com,api.individual.githubcopilot.com
+2026-08-06T14:00:37.3363780Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-08-06T14:00:37.3364841Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-08-06T14:00:37.3365909Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-08-06T14:00:37.3366959Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-08-06T14:00:37.3368087Z   GH_AW_DAILY_AI_CREDITS_TOTAL_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:37.3369240Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-08-06T14:00:37.3370263Z   GH_AW_GROUP_REPORTS: false
+2026-08-06T14:00:37.3371220Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-08-06T14:00:37.3372436Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-08-06T14:00:37.3373788Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-08-06T14:00:37.3374856Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-08-06T14:00:37.3375752Z ##[endgroup]
+2026-08-06T14:00:37.6060722Z [ai-credits] aiCredits source=none GH_AW_AIC=(unset)
+2026-08-06T14:00:37.6072400Z [ai-credits] maxAICredits source=env(GH_AW_MAX_AI_CREDITS) value=1000
+2026-08-06T14:00:37.6093193Z [ai-credits] rateLimitSignal source=none
+2026-08-06T14:00:37.6194158Z Agent conclusion: failure
+2026-08-06T14:00:37.6195505Z Workflow name: Repository Issue and Pull Request Report
+2026-08-06T14:00:37.6196843Z Workflow ID: repository-issue-pr-report
+2026-08-06T14:00:37.6353599Z Secret verification result: success
+2026-08-06T14:00:37.6355015Z Engine secret failure message: (set)
+2026-08-06T14:00:37.6356149Z Assignment error count: 0
+2026-08-06T14:00:37.6357138Z Assign copilot failure count: 0
+2026-08-06T14:00:37.6358169Z Skill install failure count: 0
+2026-08-06T14:00:37.6390426Z Create discussion error count: 0
+2026-08-06T14:00:37.6392594Z Code push failure count: 0
+2026-08-06T14:00:37.6394367Z Checkout PR success: true
+2026-08-06T14:00:37.6395322Z AI credits: (none)
+2026-08-06T14:00:37.6396215Z Configured max AI credits: 1000
+2026-08-06T14:00:37.6397781Z AI credits rate-limit error: false
+2026-08-06T14:00:37.6398974Z Max AI credits exceeded (harness budget abort): false
+2026-08-06T14:00:37.6400597Z Daily workflow AIC guardrail exceeded: false
+2026-08-06T14:00:37.6401763Z Inference access error: false
+2026-08-06T14:00:37.6403612Z MCP policy error: false
+2026-08-06T14:00:37.6404563Z Agentic engine timeout: false
+2026-08-06T14:00:37.6406903Z Model not supported error: false
+2026-08-06T14:00:37.6410346Z HTTP 400 response error: false
+2026-08-06T14:00:37.6426550Z Unknown model AI credits error: false
+2026-08-06T14:00:37.6428438Z Unknown model AI credits sources (audit/output): false/false
+2026-08-06T14:00:37.6429895Z Missing model pricing error: false (model: (unknown))
+2026-08-06T14:00:37.6431107Z Push repo-memory result: 
+2026-08-06T14:00:37.6433056Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-08-06T14:00:37.6434571Z Lockdown check failed: false
+2026-08-06T14:00:37.6435553Z OAuth token check failed: false
+2026-08-06T14:00:37.6439467Z Stale lock file check failed: false
+2026-08-06T14:00:37.6446099Z Cache memory enabled: false
+2026-08-06T14:00:37.6447382Z Cache memory restored (from restore outputs): false
+2026-08-06T14:00:37.6449749Z Missing tool report-as-failure: true
+2026-08-06T14:00:37.6451884Z Missing data report-as-failure: true
+2026-08-06T14:00:37.6455613Z Agent output content length: 24
+2026-08-06T14:00:37.7037884Z Searching for pull request from branch: main
+2026-08-06T14:00:38.2433176Z No pull request found for branch: main
+2026-08-06T14:00:38.2938264Z Parent issue creation is disabled (group-reports: false)
+2026-08-06T14:00:38.3183083Z Checking for existing issue with precise failure metadata for title: "[aw] Repository Issue and Pull Request Report failed"
+2026-08-06T14:00:38.6171931Z No existing issue found, creating a new one
+2026-08-06T14:00:38.9520062Z agent-stdio.log contains only infrastructure lines — engine likely failed at startup (possible transient failure)
+2026-08-06T14:00:38.9590714Z Generating failure issue footer with aiCredits context: (none)
+2026-08-06T14:00:39.4059645Z [@octokit/request] "POST https://api.github.com/repos/GerardoRamosCol/Cobol-labs/issues" is deprecated. It is scheduled to be removed on Fri, 10 Mar 2028 00:00:00 GMT. See https://docs.github.com/en/rest/about-the-rest-api/api-versions
+2026-08-06T14:00:39.4066310Z ✓ Created new issue #24: https://github.com/GerardoRamosCol/Cobol-labs/issues/24
+2026-08-06T14:00:39.7721555Z Cascade check: 1 failure issue(s) in the last 60 min (threshold: 10) — no cascade

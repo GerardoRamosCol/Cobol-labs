@@ -1,0 +1,27 @@
+﻿2026-08-06T13:59:27.4971073Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:59:27.4971421Z with:
+2026-08-06T13:59:27.4972166Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_token_usage.cjs');
+await main();
+
+2026-08-06T13:59:27.4974653Z   github-token: ***
+2026-08-06T13:59:27.4974854Z   debug: false
+2026-08-06T13:59:27.4975053Z   user-agent: actions/github-script
+2026-08-06T13:59:27.4975305Z   result-encoding: json
+2026-08-06T13:59:27.4975512Z   retries: 0
+2026-08-06T13:59:27.4975720Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:59:27.4975967Z env:
+2026-08-06T13:59:27.4976140Z   DEFAULT_BRANCH: main
+2026-08-06T13:59:27.4976347Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:59:27.4976556Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:59:27.4976754Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:59:27.4976997Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:59:27.4977297Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:59:27.4977541Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:59:27.4977859Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:59:27.4978160Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:59:27.4978427Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:59:27.4978694Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T13:59:27.4978947Z ##[endgroup]
+2026-08-06T13:59:27.5815030Z No token usage data found, skipping summary

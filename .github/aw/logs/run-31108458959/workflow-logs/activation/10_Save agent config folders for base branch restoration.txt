@@ -1,0 +1,26 @@
+﻿2026-08-06T13:58:25.2841738Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/save_base_github_folders.sh"
+2026-08-06T13:58:25.2843050Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/save_base_github_folders.sh"[0m
+2026-08-06T13:58:25.2848034Z shell: /usr/bin/bash -e {0}
+2026-08-06T13:58:25.2848513Z env:
+2026-08-06T13:58:25.2848911Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:25.2849414Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:25.2849979Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:25.2850649Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:25.2851244Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:25.2852039Z   GH_AW_AGENT_FOLDERS: .agents .antigravity .claude .codex .gemini .github .opencode .pi
+2026-08-06T13:58:25.2853583Z   GH_AW_AGENT_FILES: AGENTS.md ANTIGRAVITY.md CLAUDE.md GEMINI.md PI.md opencode.jsonc
+2026-08-06T13:58:25.2854534Z ##[endgroup]
+2026-08-06T13:58:25.2901524Z .agents not found in workspace, skipping
+2026-08-06T13:58:25.2940932Z .antigravity not found in workspace, skipping
+2026-08-06T13:58:25.2943232Z .claude not found in workspace, skipping
+2026-08-06T13:58:25.2944130Z .codex not found in workspace, skipping
+2026-08-06T13:58:25.2944888Z .gemini not found in workspace, skipping
+2026-08-06T13:58:25.2945588Z Saved .github to /tmp/gh-aw/base/.github
+2026-08-06T13:58:25.2946323Z .opencode not found in workspace, skipping
+2026-08-06T13:58:25.2947038Z .pi not found in workspace, skipping
+2026-08-06T13:58:25.2947801Z AGENTS.md not found in workspace, skipping
+2026-08-06T13:58:25.2948590Z ANTIGRAVITY.md not found in workspace, skipping
+2026-08-06T13:58:25.2949414Z CLAUDE.md not found in workspace, skipping
+2026-08-06T13:58:25.2950135Z GEMINI.md not found in workspace, skipping
+2026-08-06T13:58:25.2950841Z PI.md not found in workspace, skipping
+2026-08-06T13:58:25.2951553Z opencode.jsonc not found in workspace, skipping

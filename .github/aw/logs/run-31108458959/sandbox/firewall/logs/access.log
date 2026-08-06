@@ -1,0 +1,8 @@
+1786024750.953 ::1:46822 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1786024752.974 172.30.0.30:38232 api.githubcopilot.com:443 140.82.112.21:443 1.1 CONNECT 200 TCP_TUNNEL:HIER_DIRECT api.githubcopilot.com:443 "-"
+1786024752.987 ::1:46826 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1786024752.987 172.30.0.30:38228 api.githubcopilot.com:443 140.82.112.21:443 1.1 CONNECT 200 TCP_TUNNEL:HIER_DIRECT api.githubcopilot.com:443 "-"
+1786024755.020 ::1:46828 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1786024757.052 ::1:46838 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1786024759.081 ::1:46852 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1786024761.122 ::1:46034 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"

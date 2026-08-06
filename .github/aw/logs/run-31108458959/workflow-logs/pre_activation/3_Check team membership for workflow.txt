@@ -1,0 +1,25 @@
+﻿2026-08-06T13:58:12.3973076Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:12.3974191Z with:
+2026-08-06T13:58:12.3978990Z   github-token: ***
+2026-08-06T13:58:12.3980645Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_membership.cjs');
+await main();
+
+2026-08-06T13:58:12.3982658Z   debug: false
+2026-08-06T13:58:12.3983098Z   user-agent: actions/github-script
+2026-08-06T13:58:12.3983634Z   result-encoding: json
+2026-08-06T13:58:12.3984354Z   retries: 0
+2026-08-06T13:58:12.3984831Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:12.3985403Z env:
+2026-08-06T13:58:12.3985802Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:12.3986370Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:12.3987078Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: eea585a7fa679d98
+2026-08-06T13:58:12.3987699Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024692376
+2026-08-06T13:58:12.3988328Z   GH_AW_REQUIRED_ROLES: admin,maintainer,write
+2026-08-06T13:58:12.3988895Z ##[endgroup]
+2026-08-06T13:58:12.5270987Z Event workflow_dispatch requires validation
+2026-08-06T13:58:12.5279310Z Checking if user 'GerardoRamosCol' has required permissions for GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:12.5282598Z Required permissions: admin, maintainer, write
+2026-08-06T13:58:12.7868878Z Repository permission level: admin
+2026-08-06T13:58:12.7901940Z ✅ User has admin access to repository

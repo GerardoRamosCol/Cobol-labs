@@ -1,0 +1,28 @@
+﻿2026-08-06T13:58:23.8919575Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:23.8923894Z with:
+2026-08-06T13:58:23.8928985Z   github-token: ***
+2026-08-06T13:58:23.8930839Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_daily_aic_workflow_guardrail.cjs');
+await main();
+
+2026-08-06T13:58:23.8932875Z   debug: false
+2026-08-06T13:58:23.8933335Z   user-agent: actions/github-script
+2026-08-06T13:58:23.8933883Z   result-encoding: json
+2026-08-06T13:58:23.8934336Z   retries: 0
+2026-08-06T13:58:23.8934805Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:23.8935386Z env:
+2026-08-06T13:58:23.8935803Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:23.8936330Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:23.8936906Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:23.8937637Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:23.8938256Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:23.8938938Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T13:58:23.8939646Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T13:58:23.8940471Z   GH_AW_RUN_URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959
+2026-08-06T13:58:23.8941282Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-08-06T13:58:23.8941837Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-08-06T13:58:23.8942527Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-08-06T13:58:23.8946480Z   GH_AW_GITHUB_TOKEN: ***
+2026-08-06T13:58:23.8946963Z ##[endgroup]
+2026-08-06T13:58:24.0634336Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.

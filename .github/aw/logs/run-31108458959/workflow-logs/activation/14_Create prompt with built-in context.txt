@@ -1,0 +1,71 @@
+﻿2026-08-06T13:58:26.2917200Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"
+2026-08-06T13:58:26.2918170Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"[0m
+2026-08-06T13:58:26.2918836Z [36;1m{[0m
+2026-08-06T13:58:26.2919295Z [36;1mcat << 'GH_AW_PROMPT_418c566365dec1fb_EOF'[0m
+2026-08-06T13:58:26.2919878Z [36;1m<system>[0m
+2026-08-06T13:58:26.2920330Z [36;1mGH_AW_PROMPT_418c566365dec1fb_EOF[0m
+2026-08-06T13:58:26.2920944Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/xpia.md"[0m
+2026-08-06T13:58:26.2921658Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/temp_folder_prompt.md"[0m
+2026-08-06T13:58:26.2922743Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/markdown.md"[0m
+2026-08-06T13:58:26.2923503Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_prompt.md"[0m
+2026-08-06T13:58:26.2924219Z [36;1mcat << 'GH_AW_PROMPT_418c566365dec1fb_EOF'[0m
+2026-08-06T13:58:26.2924804Z [36;1m<safe-output-tools>[0m
+2026-08-06T13:58:26.2925400Z [36;1mTools: create_issue, missing_tool, missing_data, noop[0m
+2026-08-06T13:58:26.2926092Z [36;1m</safe-output-tools>[0m
+2026-08-06T13:58:26.2926601Z [36;1mGH_AW_PROMPT_418c566365dec1fb_EOF[0m
+2026-08-06T13:58:26.2927279Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/mcp_cli_tools_prompt.md"[0m
+2026-08-06T13:58:26.2927998Z [36;1mcat << 'GH_AW_PROMPT_418c566365dec1fb_EOF'[0m
+2026-08-06T13:58:26.2928577Z [36;1m<github-context>[0m
+2026-08-06T13:58:26.2929273Z [36;1mThe following GitHub context information is available for this workflow:[0m
+2026-08-06T13:58:26.2930040Z [36;1m{{#if github.actor}}[0m
+2026-08-06T13:58:26.2930569Z [36;1m- **actor**: __GH_AW_GITHUB_ACTOR__[0m
+2026-08-06T13:58:26.2931119Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2931548Z [36;1m{{#if github.repository}}[0m
+2026-08-06T13:58:26.2932122Z [36;1m- **repository**: __GH_AW_GITHUB_REPOSITORY__[0m
+2026-08-06T13:58:26.2933008Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2933440Z [36;1m{{#if github.workspace}}[0m
+2026-08-06T13:58:26.2934008Z [36;1m- **workspace**: __GH_AW_GITHUB_WORKSPACE__[0m
+2026-08-06T13:58:26.2934580Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2935409Z [36;1m{{#if github.event.issue.number || (github.aw.context.item_type == 'issue' && github.aw.context.item_number)}}[0m
+2026-08-06T13:58:26.2936415Z [36;1m- **issue-number**: #__GH_AW_EXPR_802A9F6A__[0m
+2026-08-06T13:58:26.2936988Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2937869Z [36;1m{{#if github.event.discussion.number || (github.aw.context.item_type == 'discussion' && github.aw.context.item_number)}}[0m
+2026-08-06T13:58:26.2938952Z [36;1m- **discussion-number**: #__GH_AW_EXPR_1A3A194A__[0m
+2026-08-06T13:58:26.2939569Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2940671Z [36;1m{{#if github.event.pull_request.number || (github.aw.context.item_type == 'pull_request' && github.aw.context.item_number)}}[0m
+2026-08-06T13:58:26.2941765Z [36;1m- **pull-request-number**: #__GH_AW_EXPR_463A214A__[0m
+2026-08-06T13:58:26.2942574Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2943166Z [36;1m{{#if github.event.comment.id || github.aw.context.comment_id}}[0m
+2026-08-06T13:58:26.2943912Z [36;1m- **comment-id**: __GH_AW_EXPR_FF1D34CE__[0m
+2026-08-06T13:58:26.2944464Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2944889Z [36;1m{{#if github.run_id}}[0m
+2026-08-06T13:58:26.2945504Z [36;1m- **workflow-run-id**: __GH_AW_GITHUB_RUN_ID__[0m
+2026-08-06T13:58:26.2946145Z [36;1m{{/if}}[0m
+2026-08-06T13:58:26.2946632Z [36;1m</github-context>[0m
+2026-08-06T13:58:26.2947153Z [36;1m[0m
+2026-08-06T13:58:26.2947633Z [36;1mGH_AW_PROMPT_418c566365dec1fb_EOF[0m
+2026-08-06T13:58:26.2948521Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/github_mcp_tools_with_safeoutputs_prompt.md"[0m
+2026-08-06T13:58:26.2949352Z [36;1mcat << 'GH_AW_PROMPT_418c566365dec1fb_EOF'[0m
+2026-08-06T13:58:26.2949911Z [36;1m</system>[0m
+2026-08-06T13:58:26.2950876Z [36;1m{{#runtime-import .github/workflows/repository-issue-pr-report.md}}[0m
+2026-08-06T13:58:26.2951641Z [36;1mGH_AW_PROMPT_418c566365dec1fb_EOF[0m
+2026-08-06T13:58:26.2952181Z [36;1m} > "$GH_AW_PROMPT"[0m
+2026-08-06T13:58:26.2957487Z shell: /usr/bin/bash -e {0}
+2026-08-06T13:58:26.2957982Z env:
+2026-08-06T13:58:26.2958379Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:26.2958902Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:26.2959470Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:26.2960157Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:26.2960764Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:26.2961359Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-06T13:58:26.2962125Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-06T13:58:26.2963191Z   GH_AW_EXPR_1A3A194A: false
+2026-08-06T13:58:26.2963682Z   GH_AW_EXPR_463A214A: false
+2026-08-06T13:58:26.2964149Z   GH_AW_EXPR_802A9F6A: false
+2026-08-06T13:58:26.2964623Z   GH_AW_EXPR_FF1D34CE: 
+2026-08-06T13:58:26.2966329Z   GH_AW_GITHUB_ACTOR: GerardoRamosCol
+2026-08-06T13:58:26.2966971Z   GH_AW_GITHUB_REPOSITORY: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:26.2967589Z   GH_AW_GITHUB_RUN_ID: 31108458959
+2026-08-06T13:58:26.2968172Z   GH_AW_GITHUB_SERVER_URL: https://github.com
+2026-08-06T13:58:26.2968870Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/Cobol-labs/Cobol-labs
+2026-08-06T13:58:26.2969511Z ##[endgroup]

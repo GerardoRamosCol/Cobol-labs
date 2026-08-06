@@ -1,0 +1,30 @@
+﻿2026-08-06T14:00:36.6115958Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:36.6118473Z with:
+2026-08-06T14:00:36.6129362Z   github-token: ***
+2026-08-06T14:00:36.6135905Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_detection_runs.cjs');
+await main();
+
+2026-08-06T14:00:36.6139743Z   debug: false
+2026-08-06T14:00:36.6140974Z   user-agent: actions/github-script
+2026-08-06T14:00:36.6142076Z   result-encoding: json
+2026-08-06T14:00:36.6143490Z   retries: 0
+2026-08-06T14:00:36.6144430Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:36.6156350Z env:
+2026-08-06T14:00:36.6157157Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:36.6158317Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:36.6159727Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6e50f6ea6f10530e
+2026-08-06T14:00:36.6161007Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024829698
+2026-08-06T14:00:36.6162427Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T14:00:36.6163873Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:36.6166357Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:36.6169055Z   GH_AW_RUN_URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959
+2026-08-06T14:00:36.6170693Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-06T14:00:36.6174517Z   GH_AW_DETECTION_REASON: 
+2026-08-06T14:00:36.6175509Z ##[endgroup]
+2026-08-06T14:00:36.7685552Z Detection conclusion: skipped
+2026-08-06T14:00:36.7697203Z Detection reason: 
+2026-08-06T14:00:36.7699135Z Workflow name: Repository Issue and Pull Request Report
+2026-08-06T14:00:36.7705361Z Run URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959
+2026-08-06T14:00:36.7708858Z Detection conclusion is "skipped", no issue comment needed

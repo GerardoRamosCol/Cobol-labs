@@ -1,0 +1,43 @@
+﻿2026-08-06T13:58:59.5776425Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-06T13:58:59.5776760Z with:
+2026-08-06T13:58:59.5777515Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/mount_mcp_as_cli.cjs');
+await main();
+
+2026-08-06T13:58:59.5780322Z   github-token: ***
+2026-08-06T13:58:59.5780541Z   debug: false
+2026-08-06T13:58:59.5780744Z   user-agent: actions/github-script
+2026-08-06T13:58:59.5780985Z   result-encoding: json
+2026-08-06T13:58:59.5781187Z   retries: 0
+2026-08-06T13:58:59.5781404Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:59.5781664Z env:
+2026-08-06T13:58:59.5781845Z   DEFAULT_BRANCH: main
+2026-08-06T13:58:59.5782047Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:58:59.5782263Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:58:59.5782461Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:58:59.5782708Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:58:59.5783011Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:59.5783259Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:58:59.5783612Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:59.5783946Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:58:59.5784362Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:58:59.5784753Z   MCP_GATEWAY_API_KEY: ***
+2026-08-06T13:58:59.5784974Z   MCP_GATEWAY_DOMAIN: awmg-mcpg
+2026-08-06T13:58:59.5785195Z   MCP_GATEWAY_PORT: 8080
+2026-08-06T13:58:59.5785397Z ##[endgroup]
+2026-08-06T13:58:59.6720373Z Mounting MCP servers as CLI tools...
+2026-08-06T13:58:59.6721646Z Found 2 server(s) in manifest to mount as CLI tools
+2026-08-06T13:58:59.6723067Z Bridge script: /home/runner/work/_temp/gh-aw/actions/mcp_cli_bridge.cjs
+2026-08-06T13:58:59.6725013Z Mounting MCP server 'github' (host url: http://127.0.0.1:8080/mcp/github, container url: http://awmg-mcpg:8080/mcp/github)...
+2026-08-06T13:58:59.7190955Z   Found 22 tool(s)
+2026-08-06T13:58:59.7195992Z   ✓ Mounted as: /home/runner/work/_temp/gh-aw/mcp-cli/bin/github
+2026-08-06T13:58:59.7196846Z Mounting MCP server 'safeoutputs' (host url: http://127.0.0.1:8080/mcp/safeoutputs, container url: http://awmg-mcpg:8080/mcp/safeoutputs)...
+2026-08-06T13:58:59.7926848Z   Found 7 tool(s)
+2026-08-06T13:58:59.7929802Z   ✓ Mounted as: /home/runner/work/_temp/gh-aw/mcp-cli/bin/safeoutputs
+2026-08-06T13:58:59.7930531Z CLI bin directory locked (read-only): /home/runner/work/_temp/gh-aw/mcp-cli/bin
+2026-08-06T13:58:59.7931258Z 
+2026-08-06T13:58:59.7931460Z Successfully mounted 2 MCP server(s) as CLI tools:
+2026-08-06T13:58:59.7931869Z   - github
+2026-08-06T13:58:59.7932141Z   - safeoutputs
+2026-08-06T13:58:59.7932589Z CLI bin directory added to PATH: /home/runner/work/_temp/gh-aw/mcp-cli/bin

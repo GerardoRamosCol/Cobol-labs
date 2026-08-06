@@ -1,0 +1,20 @@
+﻿2026-08-06T13:58:53.9367948Z ##[group]Run mkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"
+2026-08-06T13:58:53.9368432Z [36;1mmkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"[0m
+2026-08-06T13:58:53.9368797Z [36;1mmkdir -p /tmp/gh-aw/safeoutputs[0m
+2026-08-06T13:58:53.9369521Z [36;1mmkdir -p /tmp/gh-aw/mcp-logs/safeoutputs[0m
+2026-08-06T13:58:53.9370066Z [36;1mcat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_4abad70645edeb92_EOF'[0m
+2026-08-06T13:58:53.9371199Z [36;1m{"create_issue":{"close_older_issues":true,"expires":720,"max":1,"title_prefix":"Repository issue and PR report - "},"create_report_incomplete_issue":{},"mentions":{"enabled":false},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}[0m
+2026-08-06T13:58:53.9372224Z [36;1mGH_AW_SAFE_OUTPUTS_CONFIG_4abad70645edeb92_EOF[0m
+2026-08-06T13:58:53.9407971Z shell: /usr/bin/bash -e {0}
+2026-08-06T13:58:53.9408308Z env:
+2026-08-06T13:58:53.9408643Z   DEFAULT_BRANCH: main
+2026-08-06T13:58:53.9408987Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:58:53.9409658Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:58:53.9409941Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:58:53.9410283Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:58:53.9410683Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:53.9411023Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:58:53.9411439Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:53.9411815Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:58:53.9412154Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:58:53.9412531Z ##[endgroup]

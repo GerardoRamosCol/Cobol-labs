@@ -1,0 +1,130 @@
+﻿2026-08-06T13:58:24.1063052Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-08-06T13:58:24.1063828Z with:
+2026-08-06T13:58:24.1064247Z   persist-credentials: false
+2026-08-06T13:58:24.1064992Z   sparse-checkout: .github
+.agents
+.antigravity
+.claude
+.codex
+.gemini
+.opencode
+.pi
+
+2026-08-06T13:58:24.1065974Z   sparse-checkout-cone-mode: true
+2026-08-06T13:58:24.1066479Z   fetch-depth: 1
+2026-08-06T13:58:24.1066917Z   repository: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:24.1070839Z   token: ***
+2026-08-06T13:58:24.1071233Z   ssh-strict: true
+2026-08-06T13:58:24.1071640Z   ssh-user: git
+2026-08-06T13:58:24.1072028Z   clean: true
+2026-08-06T13:58:24.1072694Z   fetch-tags: false
+2026-08-06T13:58:24.1073213Z   show-progress: true
+2026-08-06T13:58:24.1073640Z   lfs: false
+2026-08-06T13:58:24.1074027Z   submodules: false
+2026-08-06T13:58:24.1074449Z   set-safe-directory: true
+2026-08-06T13:58:24.1074931Z   allow-unsafe-pr-checkout: false
+2026-08-06T13:58:24.1075409Z env:
+2026-08-06T13:58:24.1075804Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:24.1076338Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:24.1076887Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:24.1077555Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:24.1078965Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:24.1079584Z ##[endgroup]
+2026-08-06T13:58:25.2631256Z Syncing repository: GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:25.2633809Z ##[group]Getting Git version info
+2026-08-06T13:58:25.2634585Z Working directory is '/home/runner/work/Cobol-labs/Cobol-labs'
+2026-08-06T13:58:25.2635593Z [command]/usr/bin/git version
+2026-08-06T13:58:25.2636079Z git version 2.54.0
+2026-08-06T13:58:25.2637596Z ##[endgroup]
+2026-08-06T13:58:25.2644221Z Temporarily overriding HOME='/home/runner/work/_temp/59c074fb-e007-4b5b-8bb9-6bbd01fe6121' before making global git config changes
+2026-08-06T13:58:25.2645565Z Adding repository directory to the temporary git global config as a safe directory
+2026-08-06T13:58:25.2647351Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Cobol-labs/Cobol-labs
+2026-08-06T13:58:25.2648966Z Deleting the contents of '/home/runner/work/Cobol-labs/Cobol-labs'
+2026-08-06T13:58:25.2650039Z ##[group]Determining repository object format
+2026-08-06T13:58:25.2650861Z ##[endgroup]
+2026-08-06T13:58:25.2652043Z ##[group]Initializing the repository
+2026-08-06T13:58:25.2652965Z [command]/usr/bin/git init /home/runner/work/Cobol-labs/Cobol-labs
+2026-08-06T13:58:25.2653863Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-08-06T13:58:25.2654776Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-08-06T13:58:25.2655691Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-08-06T13:58:25.2656409Z hint: call:
+2026-08-06T13:58:25.2656780Z hint:
+2026-08-06T13:58:25.2657266Z hint: 	git config --global init.defaultBranch <name>
+2026-08-06T13:58:25.2657847Z hint:
+2026-08-06T13:58:25.2658411Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-08-06T13:58:25.2659305Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-08-06T13:58:25.2660008Z hint:
+2026-08-06T13:58:25.2660417Z hint: 	git branch -m <name>
+2026-08-06T13:58:25.2660863Z hint:
+2026-08-06T13:58:25.2661467Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-08-06T13:58:25.2662621Z Initialized empty Git repository in /home/runner/work/Cobol-labs/Cobol-labs/.git/
+2026-08-06T13:58:25.2664191Z [command]/usr/bin/git remote add origin https://github.com/GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:25.2665708Z ##[endgroup]
+2026-08-06T13:58:25.2666407Z ##[group]Disabling automatic garbage collection
+2026-08-06T13:58:25.2667029Z [command]/usr/bin/git config --local gc.auto 0
+2026-08-06T13:58:25.2668304Z ##[endgroup]
+2026-08-06T13:58:25.2668954Z ##[group]Setting up auth
+2026-08-06T13:58:25.2669434Z Removing SSH command configuration
+2026-08-06T13:58:25.2670489Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-08-06T13:58:25.2672656Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-08-06T13:58:25.2674674Z Removing HTTP extra header
+2026-08-06T13:58:25.2675509Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-08-06T13:58:25.2677845Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-08-06T13:58:25.2679992Z Removing includeIf entries pointing to credentials config files
+2026-08-06T13:58:25.2680882Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-08-06T13:58:25.2682807Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-08-06T13:58:25.2685401Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-08-06T13:58:25.2688143Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git.path /home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2690842Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2693597Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2696043Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2698121Z ##[endgroup]
+2026-08-06T13:58:25.2698790Z ##[group]Fetching the repository
+2026-08-06T13:58:25.2700149Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +07e01f3c9025fdd645db3a24448f60618e2a30ee:refs/remotes/origin/main
+2026-08-06T13:58:25.2701637Z From https://github.com/GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:25.2702548Z  * [new ref]         07e01f3c9025fdd645db3a24448f60618e2a30ee -> origin/main
+2026-08-06T13:58:25.2703858Z [command]/usr/bin/git branch --list --remote origin/main
+2026-08-06T13:58:25.2704459Z   origin/main
+2026-08-06T13:58:25.2705465Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-08-06T13:58:25.2706102Z 07e01f3c9025fdd645db3a24448f60618e2a30ee
+2026-08-06T13:58:25.2707359Z ##[endgroup]
+2026-08-06T13:58:25.2708023Z ##[group]Determining the checkout info
+2026-08-06T13:58:25.2708787Z ##[endgroup]
+2026-08-06T13:58:25.2709448Z ##[group]Setting up sparse checkout
+2026-08-06T13:58:25.2710331Z [command]/usr/bin/git sparse-checkout set .github .agents .antigravity .claude .codex .gemini .opencode .pi
+2026-08-06T13:58:25.2711959Z ##[endgroup]
+2026-08-06T13:58:25.2712799Z ##[group]Checking out the ref
+2026-08-06T13:58:25.2713541Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-08-06T13:58:25.2714317Z Switched to a new branch 'main'
+2026-08-06T13:58:25.2714853Z branch 'main' set up to track 'origin/main'.
+2026-08-06T13:58:25.2716149Z ##[endgroup]
+2026-08-06T13:58:25.2717088Z [command]/usr/bin/git log -1 --format=%H
+2026-08-06T13:58:25.2717641Z 07e01f3c9025fdd645db3a24448f60618e2a30ee
+2026-08-06T13:58:25.2718917Z ##[group]Removing auth
+2026-08-06T13:58:25.2719382Z Removing SSH command configuration
+2026-08-06T13:58:25.2720096Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-08-06T13:58:25.2722251Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-08-06T13:58:25.2724234Z Removing HTTP extra header
+2026-08-06T13:58:25.2725204Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-08-06T13:58:25.2727581Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-08-06T13:58:25.2729742Z Removing includeIf entries pointing to credentials config files
+2026-08-06T13:58:25.2730633Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-08-06T13:58:25.2731534Z includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git.path
+2026-08-06T13:58:25.2732621Z includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git/worktrees/*.path
+2026-08-06T13:58:25.2733449Z includeif.gitdir:/github/workspace/.git.path
+2026-08-06T13:58:25.2734115Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-08-06T13:58:25.2735659Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git.path
+2026-08-06T13:58:25.2736836Z /home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2739006Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-86214f64\-303d\-4e0f\-9c27\-723d79c903cd\.config
+2026-08-06T13:58:25.2741706Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git/worktrees/*.path
+2026-08-06T13:58:25.2743133Z /home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2745357Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Cobol-labs/Cobol-labs/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-86214f64\-303d\-4e0f\-9c27\-723d79c903cd\.config
+2026-08-06T13:58:25.2747586Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-08-06T13:58:25.2748633Z /github/runner_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2750632Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-86214f64\-303d\-4e0f\-9c27\-723d79c903cd\.config
+2026-08-06T13:58:25.2752898Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-08-06T13:58:25.2754032Z /github/runner_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config
+2026-08-06T13:58:25.2756232Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-86214f64\-303d\-4e0f\-9c27\-723d79c903cd\.config
+2026-08-06T13:58:25.2758553Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-08-06T13:58:25.2760487Z Removing credentials config '/home/runner/work/_temp/git-credentials-86214f64-303d-4e0f-9c27-723d79c903cd.config'
+2026-08-06T13:58:25.2761921Z ##[endgroup]

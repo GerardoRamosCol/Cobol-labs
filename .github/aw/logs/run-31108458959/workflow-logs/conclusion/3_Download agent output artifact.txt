@@ -1,0 +1,26 @@
+﻿2026-08-06T14:00:29.7363625Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-06T14:00:29.7364445Z with:
+2026-08-06T14:00:29.7364828Z   name: agent
+2026-08-06T14:00:29.7365230Z   path: /tmp/gh-aw/
+2026-08-06T14:00:29.7365669Z   merge-multiple: false
+2026-08-06T14:00:29.7366142Z   repository: GerardoRamosCol/Cobol-labs
+2026-08-06T14:00:29.7366664Z   run-id: 31108458959
+2026-08-06T14:00:29.7367090Z   skip-decompress: false
+2026-08-06T14:00:29.7367596Z   digest-mismatch: error
+2026-08-06T14:00:29.7368027Z env:
+2026-08-06T14:00:29.7368416Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:29.7368989Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:29.7369647Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6e50f6ea6f10530e
+2026-08-06T14:00:29.7370245Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024829698
+2026-08-06T14:00:29.7370763Z ##[endgroup]
+2026-08-06T14:00:30.0494471Z Downloading single artifact
+2026-08-06T14:00:30.3312794Z Preparing to download the following artifacts:
+2026-08-06T14:00:30.3318735Z - agent (ID: 8970642302, Size: 105193, Expected Digest: sha256:7a11821d6b14b470e3b12237c552daead92867b36630b48ad906dee3c5b4dc70)
+2026-08-06T14:00:30.6162748Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/3830064b-819f-4a01-afcd-9cdc6e317784/workflow-job-run-c2988464-54ea-5590-9c71-8a1aa024afd6/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-08-06T14:00:30.6168246Z Starting download of artifact to: /tmp/gh-aw
+2026-08-06T14:00:30.8143899Z (node:1358) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-06T14:00:30.8145988Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-06T14:00:30.9855922Z SHA256 digest of downloaded artifact is 7a11821d6b14b470e3b12237c552daead92867b36630b48ad906dee3c5b4dc70
+2026-08-06T14:00:30.9860532Z Artifact download completed successfully.
+2026-08-06T14:00:30.9864037Z Total of 1 artifact(s) downloaded
+2026-08-06T14:00:30.9871687Z Download artifact has finished successfully

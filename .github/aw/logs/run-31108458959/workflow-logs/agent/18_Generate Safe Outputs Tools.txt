@@ -1,0 +1,149 @@
+﻿2026-08-06T13:58:53.9578220Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:53.9578912Z with:
+2026-08-06T13:58:53.9580635Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/generate_safe_outputs_tools.cjs');
+await main();
+
+2026-08-06T13:58:53.9585786Z   github-token: ***
+2026-08-06T13:58:53.9586260Z   debug: false
+2026-08-06T13:58:53.9586706Z   user-agent: actions/github-script
+2026-08-06T13:58:53.9587242Z   result-encoding: json
+2026-08-06T13:58:53.9587721Z   retries: 0
+2026-08-06T13:58:53.9588200Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:53.9588766Z env:
+2026-08-06T13:58:53.9589331Z   DEFAULT_BRANCH: main
+2026-08-06T13:58:53.9589770Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:58:53.9590280Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:58:53.9590750Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:58:53.9591423Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:58:53.9591980Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:53.9592551Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:58:53.9593211Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:53.9593810Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:58:53.9594427Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:58:53.9595892Z   GH_AW_TOOLS_META_JSON: {
+  "description_suffixes": {
+    "create_issue": " CONSTRAINTS: Maximum 1 issue(s) can be created. Title will be prefixed with \"Repository issue and PR report - \"."
+  },
+  "repo_params": {},
+  "dynamic_tools": []
+}
+
+2026-08-06T13:58:53.9604659Z   GH_AW_VALIDATION_JSON: {
+  "create_issue": {
+    "defaultMax": 1,
+    "fields": {
+      "body": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000,
+        "minLength": 20
+      },
+      "fields": {
+        "type": "array"
+      },
+      "labels": {
+        "type": "array",
+        "itemType": "string",
+        "itemSanitize": true,
+        "itemMaxLength": 128
+      },
+      "parent": {
+        "issueOrPRNumber": true
+      },
+      "repo": {
+        "type": "string",
+        "maxLength": 256
+      },
+      "temporary_id": {
+        "type": "string"
+      },
+      "title": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      }
+    }
+  },
+  "mentions": {
+    "enabled": false
+  },
+  "missing_data": {
+    "defaultMax": 20,
+    "fields": {
+      "alternatives": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "context": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "data_type": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      },
+      "reason": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      }
+    }
+  },
+  "missing_tool": {
+    "defaultMax": 20,
+    "fields": {
+      "alternatives": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 512
+      },
+      "reason": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "tool": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      }
+    }
+  },
+  "noop": {
+    "defaultMax": 1,
+    "fields": {
+      "message": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000
+      }
+    }
+  },
+  "report_incomplete": {
+    "defaultMax": 5,
+    "fields": {
+      "details": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000
+      },
+      "reason": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 1024
+      }
+    }
+  }
+}
+
+2026-08-06T13:58:53.9612307Z ##[endgroup]

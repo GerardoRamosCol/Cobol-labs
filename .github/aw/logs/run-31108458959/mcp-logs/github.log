@@ -1,0 +1,9 @@
+[2026-08-06T13:58:55.740Z] [INFO] [difc] Guard policy: {"allow-only":{"min-integrity":"approved","repos":"public"}}
+[2026-08-06T13:58:55.881Z] [INFO] [difc] Loaded discovered WASM guard from file: 00-github-guard.wasm
+[2026-08-06T13:58:56.943Z] [WARN] [difc] FORCED REPOS=PUBLIC: workflow repo GerardoRamosCol/Cobol-labs is public — overriding allow-only scope to 'public' to prevent private data reads
+[2026-08-06T13:58:57.004Z] [INFO] [difc] Registered guard 'github'
+[2026-08-06T13:58:57.118Z] [DEBUG] [backend] GetOrLaunch called for server: github
+[2026-08-06T13:58:57.121Z] [INFO] [backend] Configuring HTTP MCP backend: github, url=https://api.githubcopilot.com/mcp/
+[2026-08-06T13:58:57.685Z] [INFO] [backend] Successfully configured HTTP MCP backend: github
+[2026-08-06T13:58:57.686Z] [INFO] [backend] Backend server info: name=github-mcp-server, version=github-mcp-server/remote-9a3b5e0876941ea4bfacd1b0037610a079ddd0ae
+[2026-08-06T13:58:58.683Z] [INFO] [backend] Successfully registered tools from github (took 1.384642832s)

@@ -1,0 +1,47 @@
+# This workflow runs your test suite, generates a Cobertura XML coverage report, and uploads it to GitHub. Once this workflow is committed, coverage results appear automatically on every pull request.
+name: Code Coverage
+
+# Run on pushes to the default branch (to establish the baseline) and on pull requests (to compare against it). Code Quality compares PR branch coverage to the default branch, so both triggers are needed.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# The `code-quality: write` permission is required to upload coverage data. No other elevated permissions are needed.
+permissions:
+  contents: read
+  code-quality: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the PR head commit (not the merge commit) so coverage line numbers map correctly to the diff.
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      # Replace this step with whatever language setup your project uses (Node.js, Java, Go, etc.). The upload action works with any language that produces a Cobertura XML report.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      # Adapt this step for your test framework. The key requirement is producing a Cobertura XML file. For other languages, see the framework table earlier in this article.
+      - name: Run tests with coverage
+        run: pytest --cov=. --cov-report=xml
+
+      # This step replaces any third-party coverage upload (Codecov, Coveralls, etc.). After this runs, the `github-code-quality[bot]` bot posts a coverage summary directly on the pull request.
+      - name: Upload coverage report
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        uses: actions/upload-code-coverage@v1
+        with:
+          file: coverage.xml
+          language: Python
+          label: code-coverage/pytest
