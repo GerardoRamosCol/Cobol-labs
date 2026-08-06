@@ -4,13 +4,6 @@ description: Inventory all repository issues and pull requests, summarize their 
 on: workflow_dispatch
 permissions: read-all
 network: {}
-steps:
-  - name: Expose Copilot CLI to AWF
-    run: |
-      COPILOT_BIN="$(find "$RUNNER_TOOL_CACHE/copilot-cli" -path '*/bin/copilot' -type f 2>/dev/null | sort -V | tail -n 1)"
-      if [ -n "$COPILOT_BIN" ]; then
-        sudo ln -sf "$COPILOT_BIN" /usr/local/bin/copilot
-      fi
 tools:
   github:
     mode: remote

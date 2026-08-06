@@ -1,0 +1,44 @@
+﻿2026-08-06T14:00:14.4412644Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:14.4413490Z with:
+2026-08-06T14:00:14.4417533Z   github-token: ***
+2026-08-06T14:00:14.4419249Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/process_safe_outputs.cjs');
+await main();
+
+2026-08-06T14:00:14.4421080Z   debug: false
+2026-08-06T14:00:14.4421546Z   user-agent: actions/github-script
+2026-08-06T14:00:14.4422100Z   result-encoding: json
+2026-08-06T14:00:14.4422567Z   retries: 0
+2026-08-06T14:00:14.4423057Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:14.4423652Z env:
+2026-08-06T14:00:14.4424056Z   GH_AW_AGENT_AIC: 
+2026-08-06T14:00:14.4424756Z   GH_AW_AIC: 
+2026-08-06T14:00:14.4425195Z   GH_AW_AMBIENT_CONTEXT: 
+2026-08-06T14:00:14.4425912Z   GH_AW_CALLER_WORKFLOW_ID: GerardoRamosCol/Cobol-labs/repository-issue-pr-report
+2026-08-06T14:00:14.4426776Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-06T14:00:14.4427338Z   GH_AW_DETECTION_REASON: 
+2026-08-06T14:00:14.4427831Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:14.4428326Z   GH_AW_ENGINE_ID: copilot
+2026-08-06T14:00:14.4428823Z   GH_AW_ENGINE_MODEL: auto
+2026-08-06T14:00:14.4429326Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:14.4429827Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:14.4430400Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:14.4431147Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:14.4432413Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:14.4433646Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:14.4434554Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 34de947ced430fa0
+2026-08-06T14:00:14.4435210Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024812969
+2026-08-06T14:00:14.4435786Z   GH_HOST: github.com
+2026-08-06T14:00:14.4436323Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T14:00:14.4436934Z   GH_AW_COMMENT_ID: 
+2026-08-06T14:00:14.4441543Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,github.com,host.docker.internal,raw.githubusercontent.com,registry.npmjs.org,telemetry.enterprise.githubcopilot.com
+2026-08-06T14:00:14.4444519Z   GITHUB_SERVER_URL: https://github.com
+2026-08-06T14:00:14.4445145Z   GITHUB_API_URL: https://api.github.com
+2026-08-06T14:00:14.4447166Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"close_older_issues":true,"expires":720,"max":1,"title_prefix":"Repository issue and PR report - "},"create_report_incomplete_issue":{},"mentions":{"enabled":false},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-08-06T14:00:14.4449150Z ##[endgroup]
+2026-08-06T14:00:14.5895594Z Safe Output Handler Manager starting...
+2026-08-06T14:00:14.5905263Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_issue":{"close_older_issues":true,"expires":720,"max":1,"title_prefix":"Repository issue and PR report - "},"create_report_incomplete_issue":{},"mentions":{"enabled":false},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-08-06T14:00:14.5923547Z Agent output content length: 24
+2026-08-06T14:00:14.5927514Z Found 0 message(s) in agent output
+2026-08-06T14:00:14.5930531Z No safe-output messages available - nothing to process

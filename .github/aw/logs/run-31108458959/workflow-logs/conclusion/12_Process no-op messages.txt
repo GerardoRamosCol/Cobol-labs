@@ -1,0 +1,32 @@
+﻿2026-08-06T14:00:36.3671846Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:36.3673867Z with:
+2026-08-06T14:00:36.3684614Z   github-token: ***
+2026-08-06T14:00:36.3689847Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_noop_message.cjs');
+await main();
+
+2026-08-06T14:00:36.3694163Z   debug: false
+2026-08-06T14:00:36.3695096Z   user-agent: actions/github-script
+2026-08-06T14:00:36.3696652Z   result-encoding: json
+2026-08-06T14:00:36.3697597Z   retries: 0
+2026-08-06T14:00:36.3699885Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:36.3702681Z env:
+2026-08-06T14:00:36.3703879Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:36.3705122Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:36.3706919Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6e50f6ea6f10530e
+2026-08-06T14:00:36.3708328Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024829698
+2026-08-06T14:00:36.3710340Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T14:00:36.3711634Z   GH_AW_NOOP_MAX: 1
+2026-08-06T14:00:36.3714293Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:36.3717202Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:36.3720392Z   GH_AW_RUN_URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959
+2026-08-06T14:00:36.3722166Z   GH_AW_AGENT_CONCLUSION: failure
+2026-08-06T14:00:36.3724560Z   GH_AW_NOOP_REPORT_AS_ISSUE: true
+2026-08-06T14:00:36.3725686Z   GH_AW_AIC: 
+2026-08-06T14:00:36.3727201Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:36.3728284Z   GH_AW_AMBIENT_CONTEXT: 
+2026-08-06T14:00:36.3729393Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:36.3731127Z ##[endgroup]
+2026-08-06T14:00:36.5849438Z Agent output content length: 24
+2026-08-06T14:00:36.5858186Z No noop items found in agent output

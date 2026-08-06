@@ -1,0 +1,86 @@
+﻿2026-08-06T13:58:08.8414871Z Current runner version: '2.336.0'
+2026-08-06T13:58:08.8438992Z ##[group]Runner Image Provisioner
+2026-08-06T13:58:08.8439819Z Hosted Compute Agent
+2026-08-06T13:58:08.8440361Z Version: 20260707.563
+2026-08-06T13:58:08.8440992Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-08-06T13:58:08.8441670Z Build Date: 2026-07-07T19:33:50Z
+2026-08-06T13:58:08.8474717Z Worker ID: {53d516a9-51ee-47dc-94c7-dfaa3111ad8a}
+2026-08-06T13:58:08.8475514Z Azure Region: northcentralus
+2026-08-06T13:58:08.8476123Z ##[endgroup]
+2026-08-06T13:58:08.8477906Z ##[group]VM Image
+2026-08-06T13:58:08.8478490Z - OS: Linux (x64)
+2026-08-06T13:58:08.8479035Z - Source: Docker
+2026-08-06T13:58:08.8479840Z - Name: ubuntu:24.04
+2026-08-06T13:58:08.8480390Z - Version: 20260728.2.1
+2026-08-06T13:58:08.8480958Z ##[endgroup]
+2026-08-06T13:58:08.8481900Z ##[group]GITHUB_TOKEN Permissions
+2026-08-06T13:58:08.8494361Z Metadata: read
+2026-08-06T13:58:08.8495029Z ##[endgroup]
+2026-08-06T13:58:08.8497271Z Secret source: Actions
+2026-08-06T13:58:08.8498340Z Prepare workflow directory
+2026-08-06T13:58:08.9792328Z Prepare all required actions
+2026-08-06T13:58:08.9954146Z Getting action download info
+2026-08-06T13:58:09.2602172Z Download action repository 'github/gh-aw-actions@c863074b673419603d146aab585e2986ef08deec' (SHA:c863074b673419603d146aab585e2986ef08deec)
+2026-08-06T13:58:10.0568980Z Download action repository 'actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71' (SHA:d746ffe35508b1917358783b479e04febd2b8f71)
+2026-08-06T13:58:10.5582446Z Complete job name: pre_activation
+2026-08-06T13:58:10.6326972Z ##[group]Run github/gh-aw-actions/setup@c863074b673419603d146aab585e2986ef08deec
+2026-08-06T13:58:10.6328334Z with:
+2026-08-06T13:58:10.6329606Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-08-06T13:58:10.6330246Z   job-name: pre_activation
+2026-08-06T13:58:10.6330757Z   safe-output-artifact-client: false
+2026-08-06T13:58:10.6331630Z env:
+2026-08-06T13:58:10.6332770Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:10.6333439Z   GH_AW_SETUP_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T13:58:10.6335593Z   GH_AW_CURRENT_WORKFLOW_REF: GerardoRamosCol/Cobol-labs/.github/workflows/repository-issue-pr-report.lock.yml@refs/heads/main
+2026-08-06T13:58:10.6336733Z   GH_AW_INFO_VERSION: 1.0.77
+2026-08-06T13:58:10.6337274Z   GH_AW_INFO_AWF_VERSION: v0.27.43
+2026-08-06T13:58:10.6337808Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-08-06T13:58:10.6338876Z ##[endgroup]
+2026-08-06T13:58:12.0822670Z Successfully copied 446 files to /home/runner/work/_temp/gh-aw/actions
+2026-08-06T13:58:12.2578595Z Successfully copied 27 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-08-06T13:58:12.3485391Z Successfully copied 83 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-08-06T13:58:12.3706188Z [info] [otlp] INPUT_TRACE_ID not set, a new trace ID will be generated
+2026-08-06T13:58:12.3714457Z [info] [otlp] GH_AW_OTLP_ENDPOINTS not set, skipping setup span
+2026-08-06T13:58:12.3738105Z [info] [otlp] resolved trace-id=623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:12.3742379Z [info] [otlp] trace-id=623d486730d2d1e36dcfb1f45de19f8c written to GITHUB_OUTPUT
+2026-08-06T13:58:12.3748320Z [info] [otlp] span-id=eea585a7fa679d98 written to GITHUB_OUTPUT
+2026-08-06T13:58:12.3752551Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-08-06T13:58:12.3756409Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-08-06T13:58:12.3759815Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-08-06T13:58:12.3973095Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:58:12.3974197Z with:
+2026-08-06T13:58:12.3979006Z   github-token: ***
+2026-08-06T13:58:12.3980672Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_membership.cjs');
+await main();
+
+2026-08-06T13:58:12.3982663Z   debug: false
+2026-08-06T13:58:12.3983101Z   user-agent: actions/github-script
+2026-08-06T13:58:12.3983637Z   result-encoding: json
+2026-08-06T13:58:12.3984360Z   retries: 0
+2026-08-06T13:58:12.3984834Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:58:12.3985406Z env:
+2026-08-06T13:58:12.3985805Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:12.3986373Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:12.3987081Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: eea585a7fa679d98
+2026-08-06T13:58:12.3987728Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024692376
+2026-08-06T13:58:12.3988332Z   GH_AW_REQUIRED_ROLES: admin,maintainer,write
+2026-08-06T13:58:12.3988899Z ##[endgroup]
+2026-08-06T13:58:12.5271035Z Event workflow_dispatch requires validation
+2026-08-06T13:58:12.5279334Z Checking if user 'GerardoRamosCol' has required permissions for GerardoRamosCol/Cobol-labs
+2026-08-06T13:58:12.5282610Z Required permissions: admin, maintainer, write
+2026-08-06T13:58:12.7868936Z Repository permission level: admin
+2026-08-06T13:58:12.7901970Z ✅ User has admin access to repository
+2026-08-06T13:58:12.8439302Z Post job cleanup.
+2026-08-06T13:58:12.8795075Z [info] [otlp] GH_AW_OTLP_ENDPOINTS not set, skipping OTLP export (will attempt JSONL mirror)
+2026-08-06T13:58:12.8839778Z Cleaning up /tmp/gh-aw...
+2026-08-06T13:58:12.8955157Z Cleaned up /tmp/gh-aw
+2026-08-06T13:58:12.9072630Z No /tmp/awf-*-chroot-home directories found
+2026-08-06T13:58:12.9162463Z No /tmp/awf-chroot-* directories found
+2026-08-06T13:58:12.9257823Z Evaluate and set job outputs
+2026-08-06T13:58:12.9271952Z Set output 'activated'
+2026-08-06T13:58:12.9274222Z Set output 'setup-parent-span-id'
+2026-08-06T13:58:12.9275241Z Set output 'setup-span-id'
+2026-08-06T13:58:12.9275937Z Set output 'setup-trace-id'
+2026-08-06T13:58:12.9277053Z Cleaning up orphan processes

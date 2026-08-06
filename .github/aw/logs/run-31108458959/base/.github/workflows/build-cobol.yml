@@ -1,0 +1,87 @@
+name: Build COBOL
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: Folder containing the COBOL code to build
+        required: true
+        type: choice
+        options:
+          - accept
+          - broken
+          - comp_test
+          - display_test
+          - display_timing
+          - is_numeric
+          - json_generate
+          - merge_sort
+          - mouse
+          - numval_test
+          - read_command_args
+          - redifines
+          - report_writer
+          - screen_size
+          - search
+          - sql
+          - sub_program
+          - trim
+          - unstring
+          - xml_generate
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ inputs.folder }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install GnuCOBOL
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes gnucobol
+
+      - name: Build selected folder
+        env:
+          SOURCE_FOLDER: ${{ inputs.folder }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mapfile -d '' sources < <(
+            find "$SOURCE_FOLDER" -maxdepth 1 -type f -name '*.cbl' \
+              -print0 | sort -z
+          )
+
+          if (( ${#sources[@]} == 0 )); then
+            echo "No COBOL source files found in $SOURCE_FOLDER" >&2
+            exit 1
+          fi
+
+          mkdir -p build
+          if [[ "$SOURCE_FOLDER" == "sub_program" ]]; then
+            cobc -x -Wall sub_program/main_app.cbl sub_program/sub.cbl \
+              -o build/main_app
+            exit 0
+          fi
+
+          if [[ "$SOURCE_FOLDER" == "sql" ]]; then
+            sources=(sql/generated_sql_ex.cbl)
+          fi
+
+          for source in "${sources[@]}"; do
+            output="build/$(basename "${source%.cbl}")"
+            cobc -x -Wall "$source" -o "$output"
+          done
+
+      - name: Upload build outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobol-${{ inputs.folder }}
+          path: build/
+          if-no-files-found: error

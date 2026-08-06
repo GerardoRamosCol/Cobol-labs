@@ -1,0 +1,40 @@
+﻿2026-08-06T13:58:26.6902787Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-06T13:58:26.6903635Z with:
+2026-08-06T13:58:26.6904016Z   name: activation
+2026-08-06T13:58:26.6904444Z   include-hidden-files: true
+2026-08-06T13:58:26.6906244Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+
+2026-08-06T13:58:26.6908305Z   if-no-files-found: ignore
+2026-08-06T13:58:26.6908767Z   retention-days: 1
+2026-08-06T13:58:26.6909205Z   compression-level: 6
+2026-08-06T13:58:26.6909688Z   overwrite: false
+2026-08-06T13:58:26.6910158Z   archive: true
+2026-08-06T13:58:26.6910605Z env:
+2026-08-06T13:58:26.6911055Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-06T13:58:26.6911619Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:58:26.6912963Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:58:26.6913756Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 3e79fe6bb69916ad
+2026-08-06T13:58:26.6914422Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024702686
+2026-08-06T13:58:26.6915015Z ##[endgroup]
+2026-08-06T13:58:26.8893907Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-08-06T13:58:26.8908547Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-08-06T13:58:26.8910404Z With the provided path, there will be 20 files uploaded
+2026-08-06T13:58:26.8911413Z Artifact name is valid!
+2026-08-06T13:58:26.8911882Z Root directory input is valid!
+2026-08-06T13:58:27.0932150Z Uploading artifact: activation.zip
+2026-08-06T13:58:27.1065245Z Beginning upload of artifact content to blob storage
+2026-08-06T13:58:27.4168269Z Uploaded bytes 118233
+2026-08-06T13:58:27.4547177Z Finished uploading artifact content to blob storage!
+2026-08-06T13:58:27.4554086Z SHA256 digest of uploaded artifact is 6c15be66105ea4eb44e3c6b41a86e6585e47576095d99a5be0b961d50e71c39b
+2026-08-06T13:58:27.4559049Z Finalizing artifact upload
+2026-08-06T13:58:27.7113437Z Artifact activation successfully finalized. Artifact ID 8970607984
+2026-08-06T13:58:27.7114615Z Artifact activation has been successfully uploaded! Final size is 118233 bytes. Artifact ID is 8970607984
+2026-08-06T13:58:27.7115965Z Artifact download URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959/artifacts/8970607984

@@ -1,0 +1,47 @@
+﻿2026-08-06T14:00:14.6098517Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-06T14:00:14.6099391Z with:
+2026-08-06T14:00:14.6099833Z   name: safe-outputs-items
+2026-08-06T14:00:14.6101062Z   path: /tmp/gh-aw/safe-output-items.jsonl
+/tmp/gh-aw/temporary-id-map.json
+/tmp/gh-aw/process-safe-outputs.stdout.log
+/tmp/gh-aw/process-safe-outputs.stderr.log
+
+2026-08-06T14:00:14.6102383Z   if-no-files-found: ignore
+2026-08-06T14:00:14.6102900Z   compression-level: 6
+2026-08-06T14:00:14.6103376Z   overwrite: false
+2026-08-06T14:00:14.6103836Z   include-hidden-files: false
+2026-08-06T14:00:14.6104739Z   archive: true
+2026-08-06T14:00:14.6105183Z env:
+2026-08-06T14:00:14.6105593Z   GH_AW_AGENT_AIC: 
+2026-08-06T14:00:14.6106065Z   GH_AW_AIC: 
+2026-08-06T14:00:14.6106508Z   GH_AW_AMBIENT_CONTEXT: 
+2026-08-06T14:00:14.6107235Z   GH_AW_CALLER_WORKFLOW_ID: GerardoRamosCol/Cobol-labs/repository-issue-pr-report
+2026-08-06T14:00:14.6108051Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-06T14:00:14.6108616Z   GH_AW_DETECTION_REASON: 
+2026-08-06T14:00:14.6109151Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:14.6109643Z   GH_AW_ENGINE_ID: copilot
+2026-08-06T14:00:14.6110139Z   GH_AW_ENGINE_MODEL: auto
+2026-08-06T14:00:14.6111918Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:14.6112528Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:14.6113119Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:14.6113877Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:14.6115415Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:14.6116622Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:14.6117353Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 34de947ced430fa0
+2026-08-06T14:00:14.6118020Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024812969
+2026-08-06T14:00:14.6118605Z   GH_HOST: github.com
+2026-08-06T14:00:14.6119060Z ##[endgroup]
+2026-08-06T14:00:14.8043409Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-08-06T14:00:14.8060660Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-08-06T14:00:14.8064406Z With the provided path, there will be 3 files uploaded
+2026-08-06T14:00:14.8072350Z Artifact name is valid!
+2026-08-06T14:00:14.8075097Z Root directory input is valid!
+2026-08-06T14:00:15.0972481Z Uploading artifact: safe-outputs-items.zip
+2026-08-06T14:00:15.1039947Z Beginning upload of artifact content to blob storage
+2026-08-06T14:00:15.3689955Z Uploaded bytes 832
+2026-08-06T14:00:15.4260270Z Finished uploading artifact content to blob storage!
+2026-08-06T14:00:15.4266883Z SHA256 digest of uploaded artifact is 93c6e5ce68ad881640046d79d83cb5d0d98f7b6274f4312063b24424fdbea30a
+2026-08-06T14:00:15.4271316Z Finalizing artifact upload
+2026-08-06T14:00:15.8448278Z Artifact safe-outputs-items successfully finalized. Artifact ID 8970668477
+2026-08-06T14:00:15.8449819Z Artifact safe-outputs-items has been successfully uploaded! Final size is 832 bytes. Artifact ID is 8970668477
+2026-08-06T14:00:15.8451445Z Artifact download URL: https://github.com/GerardoRamosCol/Cobol-labs/actions/runs/31108458959/artifacts/8970668477

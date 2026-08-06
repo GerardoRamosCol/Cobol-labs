@@ -1,0 +1,24 @@
+﻿2026-08-06T14:00:37.0320957Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:37.0323505Z with:
+2026-08-06T14:00:37.0350021Z   github-token: ***
+2026-08-06T14:00:37.0353877Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/report_incomplete_handler.cjs');
+await main();
+
+2026-08-06T14:00:37.0359836Z   debug: false
+2026-08-06T14:00:37.0360752Z   user-agent: actions/github-script
+2026-08-06T14:00:37.0361783Z   result-encoding: json
+2026-08-06T14:00:37.0362964Z   retries: 0
+2026-08-06T14:00:37.0363881Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:37.0364980Z env:
+2026-08-06T14:00:37.0365747Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:37.0366840Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:37.0369379Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 6e50f6ea6f10530e
+2026-08-06T14:00:37.0370660Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024829698
+2026-08-06T14:00:37.0371835Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-06T14:00:37.0373282Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-08-06T14:00:37.0375329Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:37.0379040Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:37.0381177Z ##[endgroup]
+2026-08-06T14:00:37.2954504Z Max count: unlimited

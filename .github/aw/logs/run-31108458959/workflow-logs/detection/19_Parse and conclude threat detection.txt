@@ -1,0 +1,52 @@
+﻿2026-08-06T14:00:00.5010671Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T14:00:00.5011375Z with:
+2026-08-06T14:00:00.5017561Z   script: try {
+  const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+  setupGlobals(core, github, context, exec, io, getOctokit);
+  const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_threat_detection_results.cjs');
+  await main();
+} catch (loadErr) {
+  const continueOnError = process.env.GH_AW_DETECTION_CONTINUE_ON_ERROR !== 'false';
+  const detectionExecutionFailed = process.env.DETECTION_AGENTIC_EXECUTION_OUTCOME === 'failure';
+  const msg = 'ERR_SYSTEM: \u274C Unexpected error loading threat detection module: ' + (loadErr && loadErr.message ? loadErr.message : String(loadErr));
+  core.error(msg);
+  core.setOutput('reason', 'parse_error');
+  if (continueOnError && !detectionExecutionFailed) {
+    core.warning('\u26A0\uFE0F ' + msg);
+    core.setOutput('conclusion', 'warning');
+    core.setOutput('success', 'false');
+  } else {
+    core.setOutput('conclusion', 'failure');
+    core.setOutput('success', 'false');
+    core.setFailed(msg);
+  }
+}
+
+2026-08-06T14:00:00.5027698Z   github-token: ***
+2026-08-06T14:00:00.5028085Z   debug: false
+2026-08-06T14:00:00.5028435Z   user-agent: actions/github-script
+2026-08-06T14:00:00.5028880Z   result-encoding: json
+2026-08-06T14:00:00.5029242Z   retries: 0
+2026-08-06T14:00:00.5029627Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T14:00:00.5030109Z env:
+2026-08-06T14:00:00.5030417Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:00.5030900Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:00.5031506Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 0d0f9600d6654a0b
+2026-08-06T14:00:00.5032039Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024783075
+2026-08-06T14:00:00.5032503Z   RUN_DETECTION: false
+2026-08-06T14:00:00.5032910Z   DETECTION_AGENTIC_EXECUTION_OUTCOME: skipped
+2026-08-06T14:00:00.5033421Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-08-06T14:00:00.5033878Z ##[endgroup]
+2026-08-06T14:00:00.6116367Z ════════════════════════════════════════════════════════
+2026-08-06T14:00:00.6117661Z 🛡️  Threat Detection: Parse Results & Conclude
+2026-08-06T14:00:00.6118705Z ════════════════════════════════════════════════════════
+2026-08-06T14:00:00.6120304Z 📋 RUN_DETECTION env: "false"
+2026-08-06T14:00:00.6120910Z 📋 continue-on-error: true
+2026-08-06T14:00:00.6121627Z 📋 detection execution outcome: "skipped"
+2026-08-06T14:00:00.6122515Z 📁 Threat detection directory: /tmp/gh-aw/threat-detection
+2026-08-06T14:00:00.6123607Z 📄 Detection log path: /tmp/gh-aw/threat-detection/detection.log
+2026-08-06T14:00:00.6125150Z 📄 Structured result path: /tmp/gh-aw/threat-detection/detection_result.json
+2026-08-06T14:00:00.6126297Z ⏭️  Detection guard output indicates detection was not needed.
+2026-08-06T14:00:00.6127309Z    Reason: no agent output types or patch files were produced.
+2026-08-06T14:00:00.6128110Z    Setting conclusion=skipped, success=true.
+2026-08-06T14:00:00.6129225Z ✅ Detection skipped — no threats to evaluate.

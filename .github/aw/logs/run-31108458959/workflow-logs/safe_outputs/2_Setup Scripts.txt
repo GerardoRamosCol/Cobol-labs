@@ -1,0 +1,41 @@
+﻿2026-08-06T14:00:10.8852145Z ##[group]Run github/gh-aw-actions/setup@c863074b673419603d146aab585e2986ef08deec
+2026-08-06T14:00:10.8853422Z with:
+2026-08-06T14:00:10.8853976Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-08-06T14:00:10.8855049Z   job-name: safe_outputs
+2026-08-06T14:00:10.8855581Z   trace-id: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:10.8856192Z   parent-span-id: eea585a7fa679d98
+2026-08-06T14:00:10.8857790Z   safe-output-artifact-client: false
+2026-08-06T14:00:10.8858743Z env:
+2026-08-06T14:00:10.8859168Z   GH_AW_AGENT_AIC: 
+2026-08-06T14:00:10.8859611Z   GH_AW_AIC: 
+2026-08-06T14:00:10.8860040Z   GH_AW_AMBIENT_CONTEXT: 
+2026-08-06T14:00:10.8860768Z   GH_AW_CALLER_WORKFLOW_ID: GerardoRamosCol/Cobol-labs/repository-issue-pr-report
+2026-08-06T14:00:10.8861586Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-06T14:00:10.8862142Z   GH_AW_DETECTION_REASON: 
+2026-08-06T14:00:10.8862631Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:10.8863112Z   GH_AW_ENGINE_ID: copilot
+2026-08-06T14:00:10.8863606Z   GH_AW_ENGINE_MODEL: auto
+2026-08-06T14:00:10.8864423Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:10.8864944Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:10.8865509Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:10.8866232Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:10.8867446Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:10.8868690Z   GH_AW_SETUP_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:10.8869904Z   GH_AW_CURRENT_WORKFLOW_REF: GerardoRamosCol/Cobol-labs/.github/workflows/repository-issue-pr-report.lock.yml@refs/heads/main
+2026-08-06T14:00:10.8870990Z   GH_AW_INFO_VERSION: 1.0.77
+2026-08-06T14:00:10.8871503Z   GH_AW_INFO_AWF_VERSION: v0.27.43
+2026-08-06T14:00:10.8872043Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-08-06T14:00:10.8872548Z ##[endgroup]
+2026-08-06T14:00:12.6770453Z Successfully copied 446 files to /home/runner/work/_temp/gh-aw/actions
+2026-08-06T14:00:12.8492991Z Successfully copied 27 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-08-06T14:00:12.9416433Z Successfully copied 83 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-08-06T14:00:12.9624527Z [info] [otlp] INPUT_TRACE_ID=623d486730d2d1e36dcfb1f45de19f8c (will reuse activation trace)
+2026-08-06T14:00:12.9633243Z [info] [otlp] INPUT_PARENT_SPAN_ID=eea585a7fa679d98 (will parent setup span)
+2026-08-06T14:00:12.9637988Z [info] [otlp] GH_AW_OTLP_ENDPOINTS not set, skipping setup span
+2026-08-06T14:00:12.9665884Z [info] [otlp] resolved trace-id=623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:12.9670310Z [info] [otlp] trace-id=623d486730d2d1e36dcfb1f45de19f8c written to GITHUB_OUTPUT
+2026-08-06T14:00:12.9675122Z [info] [otlp] span-id=34de947ced430fa0 written to GITHUB_OUTPUT
+2026-08-06T14:00:12.9678887Z [info] [otlp] parent-span-id=eea585a7fa679d98 written to GITHUB_OUTPUT
+2026-08-06T14:00:12.9682431Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-08-06T14:00:12.9686275Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-08-06T14:00:12.9691401Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

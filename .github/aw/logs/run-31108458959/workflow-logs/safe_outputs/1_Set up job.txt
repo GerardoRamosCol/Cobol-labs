@@ -1,0 +1,28 @@
+﻿2026-08-06T14:00:07.8455960Z Current runner version: '2.336.0'
+2026-08-06T14:00:07.8486955Z ##[group]Runner Image Provisioner
+2026-08-06T14:00:07.8487879Z Hosted Compute Agent
+2026-08-06T14:00:07.8488461Z Version: 20260707.563
+2026-08-06T14:00:07.8489114Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-08-06T14:00:07.8489817Z Build Date: 2026-07-07T19:33:50Z
+2026-08-06T14:00:07.8490474Z Worker ID: {50f21291-8aeb-493b-a9fe-3e269bfafee9}
+2026-08-06T14:00:07.8491208Z Azure Region: westus3
+2026-08-06T14:00:07.8495715Z ##[endgroup]
+2026-08-06T14:00:07.8497450Z ##[group]VM Image
+2026-08-06T14:00:07.8498074Z - OS: Linux (x64)
+2026-08-06T14:00:07.8498653Z - Source: Docker
+2026-08-06T14:00:07.8499228Z - Name: ubuntu:24.04
+2026-08-06T14:00:07.8499783Z - Version: 20260728.2.1
+2026-08-06T14:00:07.8500328Z ##[endgroup]
+2026-08-06T14:00:07.8501467Z ##[group]GITHUB_TOKEN Permissions
+2026-08-06T14:00:07.8503512Z Issues: write
+2026-08-06T14:00:07.8504583Z Metadata: read
+2026-08-06T14:00:07.8505167Z ##[endgroup]
+2026-08-06T14:00:07.8507545Z Secret source: Actions
+2026-08-06T14:00:07.8508965Z Prepare workflow directory
+2026-08-06T14:00:07.9168618Z Prepare all required actions
+2026-08-06T14:00:07.9219620Z Getting action download info
+2026-08-06T14:00:08.4116559Z Download action repository 'github/gh-aw-actions@c863074b673419603d146aab585e2986ef08deec' (SHA:c863074b673419603d146aab585e2986ef08deec)
+2026-08-06T14:00:09.4411069Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-08-06T14:00:10.0591262Z Download action repository 'actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71' (SHA:d746ffe35508b1917358783b479e04febd2b8f71)
+2026-08-06T14:00:10.6089664Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-08-06T14:00:10.8180085Z Complete job name: safe_outputs

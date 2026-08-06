@@ -1,0 +1,28 @@
+﻿2026-08-06T13:59:26.9276911Z ##[group]Run actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71
+2026-08-06T13:59:26.9277526Z with:
+2026-08-06T13:59:26.9278925Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_copilot_log.cjs');
+await main();
+
+2026-08-06T13:59:26.9284549Z   github-token: ***
+2026-08-06T13:59:26.9284906Z   debug: false
+2026-08-06T13:59:26.9285249Z   user-agent: actions/github-script
+2026-08-06T13:59:26.9285670Z   result-encoding: json
+2026-08-06T13:59:26.9286010Z   retries: 0
+2026-08-06T13:59:26.9286385Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-06T13:59:26.9286835Z env:
+2026-08-06T13:59:26.9287091Z   DEFAULT_BRANCH: main
+2026-08-06T13:59:26.9287404Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-06T13:59:26.9287733Z   GH_AW_ASSETS_BRANCH: 
+2026-08-06T13:59:26.9288271Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-06T13:59:26.9288668Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-06T13:59:26.9289325Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T13:59:26.9289744Z   GH_AW_WORKFLOW_ID_SANITIZED: repositoryissueprreport
+2026-08-06T13:59:26.9290247Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T13:59:26.9290722Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a11d39a5c818c474
+2026-08-06T13:59:26.9291145Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024719644
+2026-08-06T13:59:26.9291608Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/sandbox/agent/logs/
+2026-08-06T13:59:26.9292166Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-06T13:59:26.9292694Z ##[endgroup]
+2026-08-06T13:59:27.0170871Z No log files found in directory: /tmp/gh-aw/sandbox/agent/logs/

@@ -1,0 +1,39 @@
+﻿2026-08-06T14:00:12.9928783Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-06T14:00:12.9929646Z with:
+2026-08-06T14:00:12.9930055Z   name: agent
+2026-08-06T14:00:12.9930496Z   path: /tmp/gh-aw/
+2026-08-06T14:00:12.9930953Z   merge-multiple: false
+2026-08-06T14:00:12.9931454Z   repository: GerardoRamosCol/Cobol-labs
+2026-08-06T14:00:12.9932010Z   run-id: 31108458959
+2026-08-06T14:00:12.9932479Z   skip-decompress: false
+2026-08-06T14:00:12.9932967Z   digest-mismatch: error
+2026-08-06T14:00:12.9933420Z env:
+2026-08-06T14:00:12.9933815Z   GH_AW_AGENT_AIC: 
+2026-08-06T14:00:12.9934528Z   GH_AW_AIC: 
+2026-08-06T14:00:12.9934968Z   GH_AW_AMBIENT_CONTEXT: 
+2026-08-06T14:00:12.9935690Z   GH_AW_CALLER_WORKFLOW_ID: GerardoRamosCol/Cobol-labs/repository-issue-pr-report
+2026-08-06T14:00:12.9936495Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-06T14:00:12.9937060Z   GH_AW_DETECTION_REASON: 
+2026-08-06T14:00:12.9937649Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-06T14:00:12.9938141Z   GH_AW_ENGINE_ID: copilot
+2026-08-06T14:00:12.9938664Z   GH_AW_ENGINE_MODEL: auto
+2026-08-06T14:00:12.9939153Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-06T14:00:12.9939637Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-06T14:00:12.9940189Z   GH_AW_WORKFLOW_ID: repository-issue-pr-report
+2026-08-06T14:00:12.9941123Z   GH_AW_WORKFLOW_NAME: Repository Issue and Pull Request Report
+2026-08-06T14:00:12.9942351Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/GerardoRamosCol/Cobol-labs/blob/main/.github/workflows/repository-issue-pr-report.md
+2026-08-06T14:00:12.9943542Z   GITHUB_AW_OTEL_TRACE_ID: 623d486730d2d1e36dcfb1f45de19f8c
+2026-08-06T14:00:12.9944455Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 34de947ced430fa0
+2026-08-06T14:00:12.9945092Z   GITHUB_AW_OTEL_JOB_START_MS: 1786024812969
+2026-08-06T14:00:12.9945646Z ##[endgroup]
+2026-08-06T14:00:13.1946635Z Downloading single artifact
+2026-08-06T14:00:14.1798100Z (node:1353) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-06T14:00:14.1820485Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-06T14:00:14.1821851Z Preparing to download the following artifacts:
+2026-08-06T14:00:14.1822963Z - agent (ID: 8970642302, Size: 105193, Expected Digest: sha256:7a11821d6b14b470e3b12237c552daead92867b36630b48ad906dee3c5b4dc70)
+2026-08-06T14:00:14.1842131Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/3830064b-819f-4a01-afcd-9cdc6e317784/workflow-job-run-c2988464-54ea-5590-9c71-8a1aa024afd6/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-08-06T14:00:14.1845014Z Starting download of artifact to: /tmp/gh-aw
+2026-08-06T14:00:14.3906816Z SHA256 digest of downloaded artifact is 7a11821d6b14b470e3b12237c552daead92867b36630b48ad906dee3c5b4dc70
+2026-08-06T14:00:14.3908188Z Artifact download completed successfully.
+2026-08-06T14:00:14.3908819Z Total of 1 artifact(s) downloaded
+2026-08-06T14:00:14.3909435Z Download artifact has finished successfully
